@@ -1,11 +1,11 @@
 // Import Express.js
-import express, { json } from "express";
+const express = require("express");
 
 // Create an Express app
 const app = express();
 
 // Middleware to parse JSON bodies
-app.use(json());
+app.use(express.json());
 
 // Set port and verify_token
 const port = process.env.PORT || 3000;
